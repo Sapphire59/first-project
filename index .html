@@ -59,5 +59,22 @@
         <small>This page was built by Deborah Chacko</small>
       </p>
     </div>
+    <script>
+      function contactUs() {
+        let name = prompt(" What is your name?");
+        let age = prompt("How old are you?");
+
+        if (age > 2) {
+          alert(`Thank you! ${name} We'll be in touch. 
+Meanwhile, have a slice of cheesecake`);
+        } else {
+          alert(` Sorry, you can't have cheesecake now`);
+        }
+      }
+
+      let contactButton = document.querySelector("button");
+
+      contactButton.addEventListener("click", contactUs);
+    </script>
   </body>
 </html>
